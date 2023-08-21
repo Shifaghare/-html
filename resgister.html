@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="login(event)">
+        <center>
+        <label>Email </label><br />
+        <input type="email" id="email" /><br />
+        <label>Password </label><br />
+        <input type="password" id="password" /><br />
+        <input type="submit" value="Login" /><br />
+        </center>
+    </form>
+    <center>
+    <button onclick="getusers()">Get users</button>
+    </center>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+
+       
+            const userEmail = document.getElementById('email').value;
+            const userPassword = document.getElementById("password").value;
+  
+            console.log( userEmail, userPassword)
+            if (userEmail && userPassword) {
+                    const userObject = { email: userEmail, password: userPassword }
+
+                    var array = JSON.parse(localStorage.getItem("users")) || [];
+                  
+                    array.push(userObject)
+
+                    localStorage.setItem("users", JSON.stringify(array))
+
+               
+                    document.getElementById("email").value = "";
+                    document.getElementById("password").value = "";
+                  
+
+
+                    alert("Login Succees..")
+                } else {
+                    alert("Errorr...")
+                }
+        }
+        function getusers() {
+            var users = JSON.parse(localStorage.getItem("users"));
+            console.log(users)
+        }
+    </script>
+</body>
+</html>

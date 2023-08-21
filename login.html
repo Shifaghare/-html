@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="login(event)">
+        <center>
+            <label>Email </label><br />
+            <input type="email" id="email" /><br />
+            <label>Password </label><br />
+            <input type="password" id="password" /><br />
+            <input type="submit" value="Login" /><br />
+        </center>
+    </form>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+
+
+            const userEmail = document.getElementById('email').value;
+            const userPassword = document.getElementById("password").value;
+
+            console.log(userEmail, userPassword)
+            if (userEmail && userPassword) {
+
+                var flag=false;
+
+                var array = JSON.parse(localStorage.getItem("users"));
+                for (var i = 0; i < array.length; i++) {
+                    if(array[i].email==userEmail && array[i].password== userPassword){
+                        alert("Logged in successfully")
+                        flag=true;
+                    }
+                      
+                    console.log(array[i].email, array[i].password)
+                }
+                if(flag==false){
+                    alert("Register please!!!")
+ 
+                }
+
+
+            } else {
+                alert("Errorr...")
+            }
+        }
+    </script>
+</body>
+</html>
