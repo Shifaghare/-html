@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 // Question 1:
 // Write a JavaScript function that takes an array of strings 
 
@@ -65,3 +66,43 @@ function findSame(array1, array2) {
     return newArray;
 }
 console.log(findSame(array1, array2))
+=======
+//1)Write a javascript function that takes an array of strings as input and returns a new array containing the lengths of those strings
+var array=[1,2,4,4,5,55,8]
+var length=array.length
+console.log(array.length)
+
+//2)write ajavascript function that takes an array of numbers as input and returns a new array with only the even numbers from the original array
+
+var array=[1,2,3,4,5,6,7,8,9];
+
+for (var i=0;i<array.length;i++)
+{
+    console.log(array[i])
+
+if(array[i]%2==0)
+{
+    console.log("Even Numbers Are:",array[i])   
+}
+}
+
+
+
+//3)write a javscript function that takes an array of numbers as input and returns the smallest number from the array.
+
+var array=[1,2,3,4,5,6]
+var min=Math.min(...array)
+console.log(min)
+
+// //4)Write a javascript function that takes two arrays as input and returns a new array containing elements that are present in both arrays.
+
+var array1=[1,2,3]
+var array2=[1,2,4]
+for(var i=0; i<array1.length;i++)
+{
+    for(var j=0; j<array1.length;j++)
+    if(i==j)
+console.log(array1,array2)
+}
+
+>>>>>>> Stashed changes

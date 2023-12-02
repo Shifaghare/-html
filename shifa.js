@@ -91,43 +91,41 @@
 // console.log(message);
 // console.log(newMessage)
 
-
+//Q Find which numbers are even or odd?
 
 // var array=[12,22,33,44,55,1,1,111,22,33]
 // for (var i = 0; i < array.length; i++) {
-//         console.log(array[i])
+//         // console.log(array[i])
 //         if (array[i] % 2 != 0) {
 //             console.log(array[i], "- This is odd number.")
 //         } else {
 //             console.log(array[i], "This is even number.")
 //         }
 //     }
+
+
+// //    Q)   Find out all odd numbers and even numbers addition from given array.
+//     var array = [2, 45, 65, 67, 23, 65, 87, 123, 67, 87, 42, 4, 6, 78, 22, 55, 98];
+//     var additionOfOddNumber = 0;
+//     var additionOfEvenNumber = 0;
     
-//    Q)   Find out all odd numbers and even numbers addition from given array.
-    var array = [2, 45, 65, 67, 23, 65, 87, 123, 67, 87, 42, 4, 6, 78, 22, 55, 98];
-    var additionOfOddNumber = 0;
-    var additionOfEvenNumber = 0;
+//     for (var i = 0; i < array.length; i++) {
+//         console.log(array[i])
     
-    for (var i = 0; i < array.length; i++) {
-        console.log(array[i])
-    
-        if (array[i] % 2 != 0) {
-            console.log(additionOfOddNumber,"+" , array[i])
+//         if (array[i] % 2 != 0) {
+//             console.log(additionOfOddNumber,"+" , array[i])
         
-            additionOfOddNumber = additionOfOddNumber + array[i];
+//             additionOfOddNumber = additionOfOddNumber + array[i];
     
-            console.log(additionOfOddNumber, "value updated")
-         }
-          else {
-             additionOfEvenNumber = additionOfEvenNumber + array[i];
-         }
-     }
+//             console.log(additionOfOddNumber, "value updated")
+//          }
+//           else {
+//              additionOfEvenNumber = additionOfEvenNumber + array[i];
+//          }
+//      }
     
-    console.log(additionOfEvenNumber, "- Addition for even number")
-    console.log(additionOfOddNumber, "-Addition for Odd number ")
-    
-    
-    
+//     console.log(additionOfEvenNumber, "- Addition for even number")
+//     console.log(additionOfOddNumber, "-Addition for Odd number ")
 //////////////////     // Nested FOR loop
     
     // Q Given an array find out addition of two number which is equal to target
@@ -152,21 +150,22 @@
 
 //Q) find count of the target number:
 
-// var array=[12,33,44,22,44,33,55,12,34,59,54,31] ;
-// var target=3;
-//  function fin(array,target)
-//  {
-//     var count = 0;
-//     for (var i = 0; i < array.length; i++) {
-//         if (array[i] == target) {
-//             count++;
-//         }
-//     }
-//     return count;
+var array=[12,33,44,22,44,33,55,12,34,59,54,31] ;
+var target=33;
+ function xyz(array,target)
+ {
+    var count = 0;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] == target) {
+            console.log("found it")
+            count++;
+        }
+    }
+    return count;
 
-// }
+}
 
-// console.log(fin(array, target))
+console.log(xyz(array, target))
 
 
 
@@ -192,7 +191,7 @@
 //     }
 // console.log(find(array, target))
 
-//Q)  find  number in an array
+//Q)  find  number in an array with a target?
 
 // var array=[98,44,33,22,33,5,12];
 // var target=98;
@@ -215,7 +214,7 @@
 //         return"error not found"
 //        }
 //        }
-//        console.log(find(array, target))
+//        console.log("ARRAY:",array,"TArget:", target)
 
 
 
@@ -230,14 +229,15 @@
 
 
 // for (var i = 0; i < array.length - 2; i++) {
-//         console.log(array[i])
+//         // console.log(array[i])
 //         for (var j = i + 1; j < array.length - 1; j++) {
 //             if (array[i] + array[j] == target) {
-//                 console.log(array[i], array[j])
+//                 // console.log(array[i], array[j])
 //             }
+
 //             for (var k = j + 1; k < array.length; k++) {
 //                 if (array[i] + array[j] + array[k] == target) {
-//                     console.log(array[i], array[j], array[k])
+//                     // console.log(array[i], array[j], array[k])
 
 
 
@@ -281,7 +281,5 @@
 
 
 //Q)  
-
-
 
 
